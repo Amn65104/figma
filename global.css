@@ -1,0 +1,29 @@
+:root {
+     --font: "Poppins", sans-serif;
+    --primary-color:#B88E2F;
+    --secondary-color: #333333;
+     --primary-grey:#3A3A3A;
+    --secondary-grey: #666666;
+    --tertiary-grey:#B0B0B0;
+    --tetra-grey: #B0B0B0;
+    --petra-grey:#616161;
+    --gap-30:30px;
+    --background-color: #FFF3E3;
+    --background-inspiration-color:#FCF8F3;
+    --background-card-color:#F4F5F7;
+    
+}
+.font-grey {
+    color:var( --secondary-grey);
+    font-size: 14px;
+
+}
+.font-16 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.gray-tittles{
+    color: var(--primary-grey);
+    font-size: 38px;
+    font-weight: 700;
+}
