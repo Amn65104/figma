@@ -367,70 +367,17 @@ nav {
 
 /*---------------------------------- share section--------------------------------------------------- */
 .share-container {
-    padding: 20px 0;
+    padding: 40px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 
-    flex-direction: column;
-    border-bottom: 1px solid rgb(192, 190, 190);
-
-    .share-content {
-        text-align: center;
-
-        .share-tittle {
-            color: var(--tetra-grey);
-            font-size: 20px;
-            font-weight: 600;
-
+    .share-img {
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
         }
-    }
-}
-
-.share-grid-container {
-
-    display: flex;
-    flex-direction: row;
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.left-imgs {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    .item2{
-        margin-top: 70px;
-    }
-     .item4{
-        margin-bottom: 80px;
-    }
-}
-
-.middle-imgs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45%;
-}
-
-.right-imgs {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  
-    gap: 20px;
-      .item6{
-        margin-top: 80px;
-    }
-    .item8{
-        margin-bottom: 70px;
-    }
-     .item9{
-        margin-bottom: 110px;
     }
 }
 
@@ -517,96 +464,137 @@ footer .upper-foot>div {
     text-align: left;
 }
 
-/* ---------------- Responsive Styles ---------------- */
+/* ---------------- Responsive Styles tab---------------- */
 
 
 @media (max-width: 1024px) {
     nav {
         gap: 5px;
     }
-    .nav-links ul, .nav-icons ul {
+
+    .nav-links ul,
+    .nav-icons ul {
         gap: 5px;
     }
 
     .hero-container {
-        
+
         justify-content: center;
         text-align: center;
     }
-    
+
     .range-container {
-       overflow-x: scroll;
+        overflow-x: scroll;
     }
-    
+      .inspiration-container {
+        flex-direction: column;
+        height: auto; 
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .inspiration-container .inspiration-content {
+        width: 80%;
+        margin: 40px auto 20px;
+    }
 
     .inspiration-container {
-        overflow-x: scroll;
-    }
-    .share-grid-container {
-        gap: 10px;
-    }
-
-   
-    .middle-imgs .item5{
+         .inspiration-card-conatiner-2 {
         display: none;
     }
-  
+    }
+    .inspiration-card{
+         width: 100%;
+        margin: auto;
+        img{
+            width: 400px;
+            height: auto;
+        }
+    }
+   
+
+
 }
+/* ---------------- Responsive Styles mobile---------------- */
 
 @media (max-width: 768px) {
-   .nav-img{
-    margin: 0 135px;
-   }
-    .nav-links, .nav-icons{
-        display: none;
+     nav {
+        flex-direction: column;
+        align-items: center; 
     }
-    h1 {
-        font-size: 32px;
-    }
-    .hero-container .hero-section {
-        padding: 10px;
-        
+    .nav-img img{
+        display: block;
+        margin: 0 auto; 
     }
 
-      .range-container {
-       overflow-x: scroll;
+    .nav-links,
+    .nav-icons {
+        display: none;
+    }
+
+    .hero-container {
+        padding: 10px;
+
+        justify-content: center;
+        text-align: center;
+        .hero-content{
+            h1{
+                 font-size: 25px;
+            }
+            .hero-text{
+                font-size: 15px;
+            }
+            button{
+                margin:20px;
+                padding: 10px 20px;
+            }
+
+        }
+    }
+
+    .range-container {
+        overflow-x: scroll;
+    }
+
+ .inspiration-container .inspiration-content {
+        width: 100%;
+        margin: 30px auto 10px;
+    .gray-tittles{
+        font-size: 30px;
+    }
+    .inspiration-txt{
+        font-size: 15px;
+    }
+    }
+
+    .inspiration-container {
+         .inspiration-card-conatiner-2 {
+        display: none;
+    }
+    }
+    .inspiration-card{
+         width: 100%;
+        margin: auto;
+        img{
+            width: 300px;
+            height: auto;
+        }
     }
     
    
 
-   .inspiration-container {
-        overflow-x: scroll;
-    }
-
-    
 
     footer .upper-foot {
         flex-wrap: wrap;
         gap: 40px;
     }
+
     .foot-col-4 form {
         flex-direction: column;
         align-items: flex-start;
     }
-    .share-grid-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .middle-imgs {
-        width: 100%;
-        justify-content: center;
-    }
-    .left-imgs,
-    .right-imgs {
-        flex: 1 1 1;
-        gap: 8px;
-    }
-    
-     
-     .middle-imgs .item5{
-        display: none;
-    }
-  
-  
-}
 
+
+
+
+}
